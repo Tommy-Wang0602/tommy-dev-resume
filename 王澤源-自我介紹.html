@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王澤源 Tommy — 自我介紹</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#FAFAF8;--sf:#FFF;--tx:#1A1A1A;--ts:#5A5A5A;--tm:#8A8A8A;--ac:#2563EB;--al:#DBEAFE;--ad:#1D4ED8;--bd:#E8E8E4;--bl:#F0F0EC;--tb:#F1F5F9;--tt:#475569;--ok:#059669;--okbg:#ECFDF5;--s1:0 1px 3px rgba(0,0,0,.04);--s2:0 4px 20px rgba(0,0,0,.06);--r:16px;--rs:10px}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif;background:var(--bg);color:var(--tx);line-height:1.8;-webkit-font-smoothing:antialiased}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,250,248,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--bl);transition:box-shadow .3s}
+nav.scrolled{box-shadow:var(--s1)}
+.ni{max-width:880px;margin:0 auto;padding:0 32px;height:56px;display:flex;align-items:center;justify-content:space-between}
+.nl{font-weight:700;font-size:1rem}.nl span{color:var(--ac)}
+.nk{display:flex;gap:32px}.nk a{text-decoration:none;color:var(--ts);font-size:.85rem;font-weight:500;position:relative}
+.nk a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--ac);transition:width .25s}
+.nk a:hover{color:var(--tx)}.nk a:hover::after{width:100%}
+.c{max-width:880px;margin:0 auto;padding:0 32px}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:56px}
+.hi{width:100%;text-align:center;animation:fu .8s ease both}
+.hb{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;background:var(--al);color:var(--ad);border-radius:100px;font-size:.82rem;font-weight:600;margin-bottom:24px}
+.hb .dot{width:7px;height:7px;background:var(--ok);border-radius:50%}
+.hn{font-family:'Playfair Display',Georgia,serif;font-size:3.8rem;font-weight:700;line-height:1.15;letter-spacing:-.03em;margin-bottom:6px}
+.hne{font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;font-weight:600;color:var(--tm);margin-bottom:24px}
+.ht{font-size:1.15rem;color:var(--ts);max-width:520px;margin:0 auto 36px;line-height:1.8}.ht strong{color:var(--tx);font-weight:600}
+.hc{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;background:var(--sf);border:1px solid var(--bd);border-radius:100px;font-size:.82rem;color:var(--ts)}
+.chip svg{width:14px;height:14px;opacity:.45}
+.sh{margin-top:56px;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--tm);font-size:.75rem;animation:bo 2s ease infinite}
+.sh svg{width:20px;height:20px;opacity:.35}
+.sec{padding:100px 0}
+.sl{font-size:.78rem;font-weight:600;color:var(--ac);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.st{font-family:'Playfair Display',Georgia,serif;font-size:2.2rem;font-weight:700;letter-spacing:-.02em;margin-bottom:48px}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.as h3{font-size:1.05rem;font-weight:700;margin-bottom:12px}
+.as p{font-size:.92rem;color:var(--ts);line-height:1.85;margin-bottom:14px}.as p strong{color:var(--tx);font-weight:600}
+.ab{margin-bottom:36px}.ab:last-child{margin-bottom:0}
+.tv{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);padding:32px;box-shadow:var(--s1)}
+.tp{display:flex;flex-direction:column}
+.ps{display:flex;align-items:flex-start;gap:16px;position:relative;padding-bottom:28px}
+.ps:last-child{padding-bottom:0}
+.ps:not(:last-child)::after{content:'';position:absolute;left:6px;top:18px;bottom:0;width:2px;background:linear-gradient(to bottom,var(--ac),var(--bd))}
+.pn{width:14px;height:14px;border-radius:50%;flex-shrink:0;position:relative;z-index:1}
+.pn.s1,.pn.s2{background:var(--bd)}.pn.s3{background:var(--ac)}
+.pi .role{font-size:.9rem;font-weight:700;margin-bottom:2px}
+.pi .per{font-family:'JetBrains Mono','Consolas',monospace;font-size:.72rem;color:var(--tm);margin-bottom:4px}
+.pi .desc{font-size:.82rem;color:var(--ts);line-height:1.6}
+.pcb{display:inline-flex;align-items:center;gap:4px;font-size:.7rem;font-weight:600;color:var(--ac);background:var(--al);padding:2px 8px;border-radius:100px;margin-top:6px}
+.pcb .dot{width:5px;height:5px;background:var(--ok);border-radius:50%}
+.pc{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:var(--s1)}
+.pb{height:180px;background:linear-gradient(135deg,#C2410C 0%,#EA580C 50%,#F97316 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.pb::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M20 20h20v20H20zM0 0h20v20H0z'/%3E%3C/g%3E%3C/svg%3E")}
+.pbi{position:relative;z-index:1;text-align:center;color:#fff}
+.ai{width:60px;height:60px;background:rgba(255,255,255,.95);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;border:1px solid rgba(255,255,255,.2);overflow:hidden;padding:4px}
+.ai img{width:100%;height:100%;object-fit:contain;border-radius:10px}
+.pbi h3{font-size:1.35rem;font-weight:700}.pbi .sub{font-size:.82rem;opacity:.8;margin-top:4px}
+.pbd{padding:40px}
+.po{font-size:.93rem;color:var(--ts);line-height:1.85;margin-bottom:36px;max-width:720px}.po strong{color:var(--tx);font-weight:600}
+.cg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:36px}
+.cc{background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);padding:24px;transition:transform .2s,box-shadow .2s}
+.cc:hover{transform:translateY(-2px);box-shadow:var(--s2)}
+.cc .num{font-family:'Playfair Display',Georgia,serif;font-size:1.8rem;font-weight:700;color:var(--al);margin-bottom:8px}
+.cc h4{font-size:.9rem;font-weight:700;margin-bottom:8px}
+.cc .prob{font-size:.82rem;color:var(--tm);line-height:1.6;margin-bottom:10px}
+.cc .sol{font-size:.82rem;color:var(--ts);line-height:1.6;padding-top:10px;border-top:1px solid var(--bd)}
+.cc .sol strong{color:var(--ac);font-weight:600}
+.pst{font-size:.8rem;font-weight:600;color:var(--tm);letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+.tt{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:0;margin-top:10px}
+.tg{font-family:'JetBrains Mono','Consolas',monospace;font-size:.78rem;font-weight:500;padding:6px 14px;background:var(--tb);color:var(--tt);border-radius:100px;border:1px solid var(--bl)}
+.tc{background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);padding:24px;transition:transform .2s,box-shadow .2s}
+.tc:hover{transform:translateY(-2px);box-shadow:var(--s2)}
+.tc h4{font-size:.9rem;font-weight:700;margin-bottom:8px}
+.tc p{font-size:.82rem;color:var(--ts);line-height:1.65}
+.tc p strong{color:var(--tx);font-weight:600}
+.rb{background:var(--okbg);border:1px solid #A7F3D0;border-radius:var(--rs);padding:20px 24px;display:flex;align-items:center;gap:12px}
+.ri{width:40px;height:40px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ri svg{width:20px;height:20px;color:var(--ok)}
+.rt{font-size:.9rem;color:var(--ok);font-weight:600;line-height:1.5}.rt span{display:block;font-weight:400;font-size:.82rem;color:#047857;margin-top:2px}
+footer{padding:48px 0;border-top:1px solid var(--bd);text-align:center}
+footer .th{font-size:1.1rem;font-weight:600;color:var(--tx);margin-bottom:6px}
+footer .ct{font-size:.85rem;color:var(--tm)}
+footer .mo{font-size:.8rem;color:var(--tm);font-style:italic;margin-top:16px;opacity:.7}
+@keyframes fu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bo{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.a{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.a.v{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.hn{font-size:2.6rem}.ag{grid-template-columns:1fr;gap:40px}.cg{grid-template-columns:1fr}.pbd{padding:28px}.nk{gap:20px}}
+@media(max-width:480px){.c{padding:0 20px}.ni{padding:0 20px}.sec{padding:72px 0}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="ni"><div class="nl">王澤源<span>.</span></div><div class="nk"><a href="#about">關於我</a><a href="#project">專案經歷</a></div></div></nav>
+
+<section class="hero"><div class="c"><div class="hi">
+  <div class="hb"><span class="dot"></span>Flutter 前端工程師</div>
+  <h1 class="hn">王澤源</h1>
+  <div class="hne">Tommy Wang</div>
+  <p class="ht">從<strong>產品助理</strong>到<strong>前端工程師</strong>，<br>我用產品思維寫程式，讓每個功能都真正解決使用者的問題。</p>
+  <div class="hc">
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Flutter / Dart</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>2+ 年開發經驗</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>AI 輔助開發</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>跨平台上架經驗</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>產品思維</span>
+  </div>
+  <div class="sh"><span>往下瀏覽</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+</div></div></section>
+
+<section class="sec" id="about"><div class="c">
+  <div class="sl a">About Me</div>
+  <h2 class="st a">關於我</h2>
+  <div class="ag">
+    <div class="as">
+      <div class="ab a">
+        <h3>· 初探：軟體資訊產業</h3>
+        <p>我的職涯始於<strong>產品專案助理</strong>。在蘿蔔科技的前七個月，我負責協助 PM 測試 App 功能、撰寫測試報告與使用者手冊，同時使用 Figma 與 Adobe XD 繪製介面。</p>
+        <p>這段期間讓我建立了對<strong>軟體從需求到落地的完整流程</strong>的理解——從需求釐清、介面設計、功能測試到最終交付，每一個環節如何串連、如何影響產品品質，都在這段經歷中扎下了根基。</p>
+      </div>
+      <div class="ab a">
+        <h3>· 轉型：從理解問題到解決問題</h3>
+        <p>在產品助理的經歷讓我對<strong>「技術開發」</strong>產生了強烈好奇，更想<strong>親手解決問題</strong>。於是我開始學習 Flutter 開發，並在同一間公司正式轉職為前端工程師。</p>
+      </div>
+      <div class="ab a">
+        <h3>· 現在：AI 驅動的開發風格</h3>
+        <p>我是一個積極擁抱技術變革的開發者。目前我熟練運用 <strong>Cursor 與 Claude Code</strong> 等 AI 工具輔助程式碼撰寫、單元測試與除錯，這讓我能以更高效率產出穩定、可維護的代碼。</p>
+        <p>對我來說，AI 不只是加速器，更是<strong>思考的夥伴</strong>——它幫助我更快驗證想法、更精準地分析需求，讓我能把更多時間花在真正需要判斷力的地方。</p>
+      </div>
+    </div>
+    <div class="tv a">
+      <div class="tp">
+        <div class="ps"><div class="pn s1"></div><div class="pi"><div class="role">南台科技大學</div><div class="per">2014 — 2018</div><div class="desc">企業管理系畢業，建立商業思維與專案管理基礎</div></div></div>
+        <div class="ps"><div class="pn s2"></div><div class="pi"><div class="role">產品專案助理</div><div class="per">2023/01 — 2023/07</div><div class="desc">App 測試、使用者手冊撰寫、UI 設計協作，累積產品開發全流程的理解</div></div></div>
+        <div class="ps"><div class="pn s3"></div><div class="pi"><div class="role">Flutter 前端工程師</div><div class="per">2023/08 — 至今</div><div class="desc">跨平台 App 開發、架構重構、雙平台上架、AI 輔助開發</div><div class="pcb"><span class="dot"></span> 現職</div></div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" id="project" style="padding-bottom:60px"><div class="c">
+  <div class="sl a">Project</div>
+  <h2 class="st a" style="margin-bottom:20px">專案 / 產品經歷</h2>
+  <div class="a" style="font-size:.9rem;color:var(--ts);margin-bottom:48px;line-height:2">
+    <a href="#proj1" style="text-decoration:none;color:var(--tx);font-weight:600">· 管好房 App</a><br>
+    <a href="#proj2" style="text-decoration:none;color:var(--tx);font-weight:600">· TimeTree Exporter</a>
+  </div>
+  <div class="pc a" id="proj1">
+    <div class="pb"><div class="pbi">
+      <div class="ai"><img src="app-logo.png" alt="管好房"></div>
+      <h3>管好房 App</h3>
+      <div class="sub">大晟租賃 · 2024/12 — 2025/12</div>
+    </div></div>
+    <div class="pbd">
+      <p class="po">「管好房」是一款為<strong>不動產包租代管租賃公司客戶</strong>設計的 App，服務對象為該客戶內部的<strong>業務、管理者、房東、房客</strong>。主要想解決的問題是減少業務、房東、房客三方間的<strong>溝通成本、合約管理與租金繳納</strong>等痛點。我負責<strong>接手前任開發者的架構，進行全面重構</strong>——從功能模組、使用者操作流程（User Flow）到 UI 介面，都重新設計與實作，最終完成雙平台上架。</p>
+
+      <div class="pst">核心挑戰與解決方式</div>
+      <div class="cg">
+        <div class="cc a"><div class="num">01</div><h4>遺留架構重構</h4><div class="prob">接手的程式碼架構混亂，邏輯耦合度高，難以維護與擴充新功能。</div><div class="sol">重新梳理程式碼邏輯，<strong>根據新需求重新規劃資料結構與模組化架構</strong>，提升可維護性與執行效率。</div></div>
+        <div class="cc a"><div class="num">02</div><h4>跨團隊溝通磨合</h4><div class="prob">初期對「需求到交付」的流程不熟悉，與後端的對接效率偏低。</div><div class="sol"><strong>主動建立溝通機制</strong>，和後端工程師確立 API 規格與交付標準，逐步磨合出高效的協作流程。</div></div>
+        <div class="cc a"><div class="num">03</div><h4>AI 工具導入開發</h4><div class="prob">面對大量重構工作，需要在有限時間內確保品質與效率兼顧。</div><div class="sol">導入 <strong>Cursor 與 Claude</strong> 輔助編碼、需求分析與除錯，顯著縮短開發週期並提升代碼品質。</div></div>
+      </div>
+
+      <div class="pst">技術使用</div>
+      <div class="cg">
+        <div class="tc a" style="border-top:3px solid #0553B1">
+          <h4>Flutter</h4>
+          <p>使用 Flutter 進行跨平台開發，狀態管理從原有的 GetX 重構為 <strong>BLoC</strong>，提升架構的可測試性與關注點分離。</p>
+          <div class="tt"><span class="tg">Flutter</span><span class="tg">Dart</span><span class="tg">BLoC</span></div>
+        </div>
+        <div class="tc a" style="border-top:3px solid #F97316">
+          <h4>Firebase</h4>
+          <p>使用 Firebase Authentication 實作<strong>使用者身分驗證</strong>功能，處理登入、註冊與權限管理流程。同時串接 <strong>Firebase Cloud Messaging (FCM)</strong> 實現推播通知，讓使用者即時接收合約、租金等重要訊息。</p>
+          <div class="tt"><span class="tg">Firebase Auth</span><span class="tg">FCM</span></div>
+        </div>
+        <div class="tc a" style="border-top:3px solid var(--ac)">
+          <h4>後端串接</h4>
+          <p>串接該公司<strong>既有的內部系統</strong>，透過 RESTful API 取得與處理資料，實現 App 與後台的即時數據互動。</p>
+          <div class="tt"><span class="tg">RESTful API</span></div>
+        </div>
+      </div>
+
+      <div class="rb"><div class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="rt">成功完成全面重構，App 已於 App Store 與 Google Play 雙平台上線<span>從接手到上架，獨立完成前端開發並持續進行版本更新維護</span></div></div>
+
+      <div class="pst" style="margin-top:36px">Demo</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px">
+        <div style="text-align:center">
+          <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
+            <video class="dv" src="demo1.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;border-radius:8px;background:#000;display:none"></video>
+            <div class="dp" style="color:var(--tm);font-size:.75rem;padding:30px 0">影片準備中</div>
+          </div>
+          <div style="font-size:.82rem;font-weight:600;color:var(--tx);margin-top:10px">登入功能</div>
+        </div>
+        <div style="text-align:center">
+          <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
+            <video class="dv" src="demo2.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;border-radius:8px;background:#000;display:none"></video>
+            <div class="dp" style="color:var(--tm);font-size:.75rem;padding:30px 0">影片準備中</div>
+          </div>
+          <div style="font-size:.82rem;font-weight:600;color:var(--tx);margin-top:10px">身份切換</div>
+        </div>
+        <div style="text-align:center">
+          <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
+            <video class="dv" src="demo3.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;border-radius:8px;background:#000;display:none"></video>
+            <div class="dp" style="color:var(--tm);font-size:.75rem;padding:30px 0">影片準備中</div>
+          </div>
+          <div style="font-size:.82rem;font-weight:600;color:var(--tx);margin-top:10px">搜尋功能</div>
+        </div>
+        <div style="text-align:center">
+          <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
+            <video class="dv" src="demo4.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;border-radius:8px;background:#000;display:none"></video>
+            <div class="dp" style="color:var(--tm);font-size:.75rem;padding:30px 0">影片準備中</div>
+          </div>
+          <div style="font-size:.82rem;font-weight:600;color:var(--tx);margin-top:10px">留言功能</div>
+        </div>
+      </div>
+      <script>document.querySelectorAll('.dv').forEach(function(v){var p=v.nextElementSibling;v.addEventListener('loadedmetadata',function(){v.style.display='block';p.style.display='none'});v.addEventListener('error',function(){v.style.display='none';p.style.display='block'})});</script>
+    </div>
+  </div>
+</div></section>
+
+  <!-- PROJECT 2: TimeTree Exporter -->
+  <div class="c" style="padding-bottom:60px">
+  <div class="pc a" id="proj2" style="margin-top:0">
+    <div class="pb" style="background:linear-gradient(135deg,#15803D 0%,#22C55E 50%,#4ADE80 100%)"><div class="pbi">
+      <div class="ai" style="font-size:.75rem;font-weight:700;color:#15803D;background:rgba(255,255,255,.95)">TTE</div>
+      <h3>TimeTree Exporter</h3>
+      <div class="sub">潛水業者內部工具</div>
+    </div></div>
+    <div class="pbd">
+      <p class="po">為一間潛水業者打造的內部工具。該業者使用 <strong>TimeTree</strong> 進行內部排班管理，但 TimeTree 無法直接匯出排班資料。此工具的目的是將 TimeTree 的排班資料<strong>同步並匯出為 CSV 檔</strong>，方便業者計算薪資。</p>
+
+      <div class="pst">畫面截圖</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px">
+        <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
+          <img src="timetree1.png" alt="主畫面" style="width:100%;border-radius:8px">
+          <div style="font-size:.78rem;font-weight:600;color:var(--tx);text-align:center;margin-top:8px">主畫面 — 同步與匯出</div>
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
+          <img src="timetree2.png" alt="匯出歷史" style="width:100%;border-radius:8px">
+          <div style="font-size:.78rem;font-weight:600;color:var(--tx);text-align:center;margin-top:8px">匯出歷史紀錄</div>
+        </div>
+      </div>
+
+      <div class="pst">核心挑戰與解決方式</div>
+      <div class="cg">
+        <div class="cc a"><div class="num">01</div><h4>資料取得限制</h4><div class="prob">TimeTree 無法直接匯出排班資料，且前端受 CORS 限制無法直接呼叫 API。</div><div class="sol">透過 <strong>Node.js 後端作為代理</strong>，呼叫 TimeTree Web API 取得排班資料並同步至資料庫。</div></div>
+        <div class="cc a"><div class="num">02</div><h4>效能優化</h4><div class="prob">初版使用 Puppeteer 爬蟲，3000 筆事件需耗時 2-3 小時。</div><div class="sol">重構為 <strong>API 批次取得</strong>（每次 300 筆），同樣資料量僅需 <strong>30 秒</strong>，效能提升超過 200 倍。</div></div>
+        <div class="cc a"><div class="num">03</div><h4>全端獨立開發</h4><div class="prob">從需求分析到部署上線皆獨立完成，需掌握前後端與雲端部署。</div><div class="sol">前端 Flutter Web、後端 Node.js、資料庫 Supabase、部署 <strong>GCP Cloud Run + Firebase Hosting</strong>，獨立完成全流程。</div></div>
+      </div>
+
+      <div class="pst">技術使用</div>
+      <div class="cg">
+        <div class="tc a" style="border-top:3px solid #0553B1">
+          <h4>Flutter Web</h4>
+          <p>前端介面開發，提供同步觸發、時間範圍篩選、CSV 匯出下載與匯出歷史查詢功能。</p>
+          <div class="tt"><span class="tg">Flutter</span><span class="tg">Dart</span></div>
+        </div>
+        <div class="tc a" style="border-top:3px solid #22C55E">
+          <h4>GCP + Node.js</h4>
+          <p>Node.js 後端部署於 <strong>GCP Cloud Run</strong>，負責代理呼叫 TimeTree 內部 API 並將資料同步至資料庫。前端靜態檔案託管於 <strong>Firebase Hosting</strong>。</p>
+          <div class="tt"><span class="tg">GCP Cloud Run</span><span class="tg">Firebase Hosting</span><span class="tg">Node.js</span></div>
+        </div>
+        <div class="tc a" style="border-top:3px solid #6366F1">
+          <h4>Supabase</h4>
+          <p>使用者認證（Supabase Auth）、事件資料儲存（PostgreSQL）、Row Level Security 確保資料隔離。</p>
+          <div class="tt"><span class="tg">Supabase Auth</span><span class="tg">PostgreSQL</span><span class="tg">RLS</span></div>
+        </div>
+      </div>
+
+      <div class="rb"><div class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="rt">已上線運作，成功處理超過 23,000 筆排班事件<span>從 Puppeteer 爬蟲重構為 API 串接，效能提升 200 倍以上</span></div></div>
+    </div>
+  </div>
+  </div>
+
+<footer><div class="c">
+  <p class="th">感謝您的時間</p>
+  <p class="ct">王澤源 Tommy · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0a6663667e796f737f6b644a6d676b636624696567">[email&#160;protected]</a> · 0921-314-789</p>
+  <p class="mo">Always Exploring and Keep Learning</p>
+</div></footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+var n=document.getElementById('nav');window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>20)});if('IntersectionObserver' in window){var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('v');o.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.a').forEach(function(el){o.observe(el)})}setTimeout(function(){document.querySelectorAll('.a').forEach(function(el){el.classList.add('v')})},1500);
+</script>
+</body>
+</html>
