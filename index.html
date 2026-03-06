@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>王澤源 Tommy — 自我介紹</title>
+<title>Tommy.Dev</title>
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -51,7 +52,7 @@ nav.scrolled{box-shadow:var(--s1)}
 .pcb .dot{width:5px;height:5px;background:var(--ok);border-radius:50%}
 .pc{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:var(--s1)}
 .pb{height:180px;background:linear-gradient(135deg,#C2410C 0%,#EA580C 50%,#F97316 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.pb::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M20 20h20v20H20zM0 0h20v20H0z'/%3E%3C/g%3E%3C/svg%3E")}
+.pb::before{display:none}
 .pbi{position:relative;z-index:1;text-align:center;color:#fff}
 .ai{width:60px;height:60px;background:rgba(255,255,255,.95);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;border:1px solid rgba(255,255,255,.2);overflow:hidden;padding:4px}
 .ai img{width:100%;height:100%;object-fit:contain;border-radius:10px}
@@ -87,6 +88,12 @@ footer .mo{font-size:.8rem;color:var(--tm);font-style:italic;margin-top:16px;opa
 .a{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.a.v{opacity:1;transform:translateY(0)}
 @media(max-width:768px){.hn{font-size:2.6rem}.ag{grid-template-columns:1fr;gap:40px}.cg{grid-template-columns:1fr}.pbd{padding:28px}.nk{gap:20px}}
 @media(max-width:480px){.c{padding:0 20px}.ni{padding:0 20px}.sec{padding:72px 0}}
+.vl-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;cursor:pointer}
+.vl-overlay.show{opacity:1}
+.vl-overlay video{max-width:90vw;max-height:85vh;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.vl-close{position:absolute;top:20px;right:24px;color:#fff;font-size:2rem;cursor:pointer;opacity:.7;transition:opacity .2s}
+.vl-close:hover{opacity:1}
+.dv{cursor:pointer}
 </style>
 </head>
 <body>
@@ -145,11 +152,7 @@ footer .mo{font-size:.8rem;color:var(--tm);font-style:italic;margin-top:16px;opa
     <a href="#proj2" style="text-decoration:none;color:var(--tx);font-weight:600">· TimeTree Exporter</a>
   </div>
   <div class="pc a" id="proj1">
-    <div class="pb"><div class="pbi">
-      <div class="ai"><img src="assets/images/app-logo.png" alt="管好房"></div>
-      <h3>管好房 App</h3>
-      <div class="sub">大晟租賃 · 2024/12 — 2025/12</div>
-    </div></div>
+    <div style="padding:0"><img src="assets/images/rent_manager/banner_v4.png" alt="管好房 App" style="width:100%;display:block;border-radius:var(--rs) var(--rs) 0 0"></div>
     <div class="pbd">
       <p class="po">「管好房」是一款為<strong>不動產包租代管租賃公司客戶</strong>設計的 App，服務對象為該客戶內部的<strong>業務、管理者、房東、房客</strong>。主要想解決的問題是減少業務、房東、房客三方間的<strong>溝通成本、合約管理與租金繳納</strong>等痛點。我負責<strong>接手前任開發者的架構，進行全面重構</strong>——從功能模組、使用者操作流程（User Flow）到 UI 介面，都重新設計與實作，最終完成雙平台上架。</p>
 
@@ -279,6 +282,14 @@ footer .mo{font-size:.8rem;color:var(--tm);font-style:italic;margin-top:16px;opa
 
 <script>
 var n=document.getElementById('nav');window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>20)});if('IntersectionObserver' in window){var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('v');o.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.a').forEach(function(el){o.observe(el)})}setTimeout(function(){document.querySelectorAll('.a').forEach(function(el){el.classList.add('v')})},1500);
+</script>
+<div class="vl-overlay" id="vl" style="display:none"><div class="vl-close">&times;</div><video id="vl-video" controls playsinline></video></div>
+<script>
+(function(){var overlay=document.getElementById('vl'),vid=document.getElementById('vl-video');
+document.querySelectorAll('.dv').forEach(function(v){v.addEventListener('click',function(){vid.src=v.src;overlay.style.display='flex';requestAnimationFrame(function(){overlay.classList.add('show')});vid.play()})});
+function close(){overlay.classList.remove('show');setTimeout(function(){overlay.style.display='none';vid.pause();vid.src=''},300)}
+overlay.addEventListener('click',function(e){if(e.target===overlay||e.target.classList.contains('vl-close'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.style.display==='flex')close()})})();
 </script>
 </body>
 </html>
