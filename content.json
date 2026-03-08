@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "name": "王澤源",
+    "links": ["關於我", "專案經歷"]
+  },
+  "hero": {
+    "badge": "Flutter 前端工程師",
+    "name": "王澤源",
+    "nameEn": "Tommy Wang",
+    "intro": "從<strong>產品助理</strong>到<strong>前端工程師</strong>，<br>我用產品思維寫程式，讓每個功能都真正解決使用者的問題。",
+    "chips": [
+      "Flutter / Dart",
+      "2+ 年開發經驗",
+      "AI 輔助開發",
+      "跨平台上架經驗",
+      "產品思維"
+    ],
+    "scrollHint": "往下瀏覽"
+  },
+  "about": {
+    "label": "About Me",
+    "title": "關於我",
+    "sections": [
+      {
+        "heading": "· 初探：軟體資訊產業",
+        "paragraphs": [
+          "我的職涯始於<strong>產品專案助理</strong>，負責協助 PM 測試 App 功能、撰寫測試報告與使用者手冊，同時使用 Figma 與 Adobe XD 繪製介面。這段經歷讓我完整理解了<strong>軟體從需求釐清、介面設計、功能測試到交付上線的全流程</strong>，也為後來轉向開發奠定了基礎。"
+        ]
+      },
+      {
+        "heading": "· 轉型：從理解問題到解決問題",
+        "paragraphs": [
+          "在產品助理的經歷讓我對<strong>「技術開發」</strong>產生了強烈好奇，更想<strong>親手解決問題</strong>。於是我開始學習 Flutter 開發，並在同一間公司正式轉職為前端工程師。"
+        ]
+      },
+      {
+        "heading": "· 現在：AI 驅動的開發風格",
+        "paragraphs": [
+          "我是一個積極擁抱技術變革的開發者。目前我熟練運用 <strong>Cursor 與 Claude Code</strong> 等 AI 工具輔助程式碼撰寫、單元測試與除錯，這讓我能以更高效率產出穩定、可維護的代碼。",
+          "對我來說，AI 不只是加速器，更是<strong>思考的夥伴</strong>——它幫助我更快驗證想法、更精準地分析需求，讓我能把更多時間花在真正需要判斷力的地方。"
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "stage": "s1",
+        "role": "南台科技大學",
+        "period": "2014 — 2018",
+        "desc": "企業管理系畢業，建立商業思維與專案管理基礎"
+      },
+      {
+        "stage": "s2",
+        "role": "產品專案助理",
+        "period": "2023/01 — 2023/07",
+        "desc": "App 測試、使用者手冊撰寫、UI 設計協作，累積產品開發全流程的理解"
+      },
+      {
+        "stage": "s3",
+        "role": "Flutter 前端工程師",
+        "period": "2023/08 — 至今",
+        "desc": "跨平台 App 開發、架構重構、雙平台上架、AI 輔助開發",
+        "current": true,
+        "currentLabel": "現職"
+      }
+    ]
+  },
+  "projects": {
+    "label": "Project",
+    "title": "專案 / 產品經歷",
+    "items": [
+      {
+        "id": "proj1",
+        "name": "管好房 App",
+        "banner": "assets/images/rent_manager/banner_v4.png",
+        "overview": "「管好房」是一款為<strong>不動產包租代管租賃公司客戶</strong>設計的 App，服務對象為該客戶內部的<strong>業務、管理者、房東、房客</strong>。主要想解決的問題是減少業務、房東、房客三方間的<strong>溝通成本、合約管理與租金繳納</strong>等痛點。我負責<strong>接手前任開發者的架構，進行全面重構</strong>——從功能模組、使用者操作流程（User Flow）到 UI 介面，都重新設計與實作，最終完成雙平台上架。",
+        "challenges": [
+          {
+            "title": "遺留架構重構",
+            "problem": "接手的程式碼架構混亂，邏輯耦合度高，難以維護與擴充新功能。",
+            "solution": "重新梳理程式碼邏輯，<strong>根據新需求重新規劃資料結構與模組化架構</strong>，提升可維護性與執行效率。"
+          },
+          {
+            "title": "跨團隊溝通磨合",
+            "problem": "初期對「需求到交付」的流程不熟悉，與後端的對接效率偏低。",
+            "solution": "<strong>主動建立溝通機制</strong>，和後端工程師確立 API 規格與交付標準，逐步磨合出高效的協作流程。"
+          },
+          {
+            "title": "AI 工具導入開發",
+            "problem": "面對大量重構工作，需要在有限時間內確保品質與效率兼顧。",
+            "solution": "導入 <strong>Cursor 與 Claude</strong> 輔助編碼、需求分析與除錯，顯著縮短開發週期並提升代碼品質。"
+          }
+        ],
+        "techStacks": [
+          {
+            "color": "#0553B1",
+            "title": "Flutter",
+            "desc": "使用 Flutter 進行跨平台開發，狀態管理從原有的 GetX 重構為 <strong>BLoC</strong>，提升架構的可測試性與關注點分離。",
+            "tags": ["Flutter", "Dart", "BLoC"]
+          },
+          {
+            "color": "#F97316",
+            "title": "Firebase",
+            "desc": "使用 Firebase Authentication 實作<strong>使用者身分驗證</strong>功能，處理登入、註冊與權限管理流程。同時串接 <strong>Firebase Cloud Messaging (FCM)</strong> 實現推播通知，讓使用者即時接收合約、租金等重要訊息。",
+            "tags": ["Firebase Auth", "FCM"]
+          },
+          {
+            "color": "var(--ac)",
+            "title": "後端串接",
+            "desc": "串接該公司<strong>既有的內部系統</strong>，透過 RESTful API 取得與處理資料，實現 App 與後台的即時數據互動。",
+            "tags": ["RESTful API"]
+          }
+        ],
+        "result": {
+          "title": "成功完成全面重構，App 已於 App Store 與 Google Play 雙平台上線",
+          "subtitle": "從接手到上架，獨立完成前端開發並持續進行版本更新維護"
+        },
+        "demos": [
+          { "src": "assets/videos/demo1.mp4", "label": "登入功能" },
+          { "src": "assets/videos/demo2.mp4", "label": "身份切換" },
+          { "src": "assets/videos/demo3.mp4", "label": "搜尋功能" },
+          { "src": "assets/videos/demo4.mp4", "label": "留言功能" }
+        ]
+      },
+      {
+        "id": "proj2",
+        "name": "TimeTree Exporter",
+        "subtitle": "潛水業者內部工具",
+        "headerColor": "linear-gradient(135deg,#15803D 0%,#22C55E 50%,#4ADE80 100%)",
+        "headerIcon": "TTE",
+        "headerIconColor": "#15803D",
+        "overview": "為一間潛水業者打造的內部工具。該業者使用 <strong>TimeTree</strong> 進行內部排班管理，但 TimeTree 無法直接匯出排班資料。此工具的目的是將 TimeTree 的排班資料<strong>同步並匯出為 CSV 檔</strong>，方便業者計算薪資。",
+        "screenshots": [
+          { "src": "assets/images/timetree1.png", "alt": "主畫面", "caption": "主畫面 — 同步與匯出" },
+          { "src": "assets/images/timetree2.png", "alt": "匯出歷史", "caption": "匯出歷史紀錄" }
+        ],
+        "challenges": [
+          {
+            "title": "資料取得限制",
+            "problem": "TimeTree 無法直接匯出排班資料，且前端受 CORS 限制無法直接呼叫 API。",
+            "solution": "透過 <strong>Node.js 後端作為代理</strong>，呼叫 TimeTree Web API 取得排班資料並同步至資料庫。"
+          },
+          {
+            "title": "效能優化",
+            "problem": "初版使用 Puppeteer 爬蟲，3000 筆事件需耗時 2-3 小時。",
+            "solution": "重構為 <strong>API 批次取得</strong>（每次 300 筆），同樣資料量僅需 <strong>30 秒</strong>，效能提升超過 200 倍。"
+          },
+          {
+            "title": "全端獨立開發",
+            "problem": "從需求分析到部署上線皆獨立完成，需掌握前後端與雲端部署。",
+            "solution": "前端 Flutter Web、後端 Node.js、資料庫 Supabase、部署 <strong>GCP Cloud Run + Firebase Hosting</strong>，獨立完成全流程。"
+          }
+        ],
+        "techStacks": [
+          {
+            "color": "#0553B1",
+            "title": "Flutter Web",
+            "desc": "前端介面開發，提供同步觸發、時間範圍篩選、CSV 匯出下載與匯出歷史查詢功能。",
+            "tags": ["Flutter", "Dart"]
+          },
+          {
+            "color": "#22C55E",
+            "title": "GCP + Node.js",
+            "desc": "Node.js 後端部署於 <strong>GCP Cloud Run</strong>，負責代理呼叫 TimeTree 內部 API 並將資料同步至資料庫。前端靜態檔案託管於 <strong>Firebase Hosting</strong>。",
+            "tags": ["GCP Cloud Run", "Firebase Hosting", "Node.js"]
+          },
+          {
+            "color": "#6366F1",
+            "title": "Supabase",
+            "desc": "使用者認證（Supabase Auth）、事件資料儲存（PostgreSQL）、Row Level Security 確保資料隔離。",
+            "tags": ["Supabase Auth", "PostgreSQL", "RLS"]
+          }
+        ],
+        "result": {
+          "title": "已上線運作，成功處理超過 23,000 筆排班事件",
+          "subtitle": "從 Puppeteer 爬蟲重構為 API 串接，效能提升 200 倍以上"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "thanks": "感謝您的時間",
+    "contact": "王澤源 Tommy",
+    "email": "liltseyuan@gmail.com",
+    "phone": "0921-314-789",
+    "motto": "Always Exploring and Keep Learning"
+  }
+}

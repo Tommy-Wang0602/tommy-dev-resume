@@ -97,199 +97,231 @@ footer .mo{font-size:.8rem;color:var(--tm);font-style:italic;margin-top:16px;opa
 </style>
 </head>
 <body>
-<nav id="nav"><div class="ni"><div class="nl">王澤源<span>.</span></div><div class="nk"><a href="#about">關於我</a><a href="#project">專案經歷</a></div></div></nav>
 
+<!-- NAV -->
+<nav id="nav"><div class="ni"><div class="nl" id="nav-name"></div><div class="nk" id="nav-links"></div></div></nav>
+
+<!-- HERO -->
 <section class="hero"><div class="c"><div class="hi">
-  <div class="hb"><span class="dot"></span>Flutter 前端工程師</div>
-  <h1 class="hn">王澤源</h1>
-  <div class="hne">Tommy Wang</div>
-  <p class="ht">從<strong>產品助理</strong>到<strong>前端工程師</strong>，<br>我用產品思維寫程式，讓每個功能都真正解決使用者的問題。</p>
-  <div class="hc">
-    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Flutter / Dart</span>
-    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>2+ 年開發經驗</span>
-    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>AI 輔助開發</span>
-    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>跨平台上架經驗</span>
-    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>產品思維</span>
-  </div>
-  <div class="sh"><span>往下瀏覽</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+  <div class="hb"><span class="dot"></span><span id="hero-badge"></span></div>
+  <h1 class="hn" id="hero-name"></h1>
+  <div class="hne" id="hero-name-en"></div>
+  <p class="ht" id="hero-intro"></p>
+  <div class="hc" id="hero-chips"></div>
+  <div class="sh"><span id="hero-scroll"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
 </div></div></section>
 
+<!-- ABOUT -->
 <section class="sec" id="about"><div class="c">
-  <div class="sl a">About Me</div>
-  <h2 class="st a">關於我</h2>
+  <div class="sl a" id="about-label"></div>
+  <h2 class="st a" id="about-title"></h2>
   <div class="ag">
-    <div class="as">
-      <div class="ab a">
-        <h3>· 初探：軟體資訊產業</h3>
-        <p>我的職涯始於<strong>產品專案助理</strong>。在蘿蔔科技的前七個月，我負責協助 PM 測試 App 功能、撰寫測試報告與使用者手冊，同時使用 Figma 與 Adobe XD 繪製介面。</p>
-        <p>這段期間讓我建立了對<strong>軟體從需求到落地的完整流程</strong>的理解——從需求釐清、介面設計、功能測試到最終交付，每一個環節如何串連、如何影響產品品質，都在這段經歷中扎下了根基。</p>
-      </div>
-      <div class="ab a">
-        <h3>· 轉型：從理解問題到解決問題</h3>
-        <p>在產品助理的經歷讓我對<strong>「技術開發」</strong>產生了強烈好奇，更想<strong>親手解決問題</strong>。於是我開始學習 Flutter 開發，並在同一間公司正式轉職為前端工程師。</p>
-      </div>
-      <div class="ab a">
-        <h3>· 現在：AI 驅動的開發風格</h3>
-        <p>我是一個積極擁抱技術變革的開發者。目前我熟練運用 <strong>Cursor 與 Claude Code</strong> 等 AI 工具輔助程式碼撰寫、單元測試與除錯，這讓我能以更高效率產出穩定、可維護的代碼。</p>
-        <p>對我來說，AI 不只是加速器，更是<strong>思考的夥伴</strong>——它幫助我更快驗證想法、更精準地分析需求，讓我能把更多時間花在真正需要判斷力的地方。</p>
-      </div>
-    </div>
+    <div class="as" id="about-sections"></div>
     <div class="tv a">
-      <div class="tp">
-        <div class="ps"><div class="pn s1"></div><div class="pi"><div class="role">南台科技大學</div><div class="per">2014 — 2018</div><div class="desc">企業管理系畢業，建立商業思維與專案管理基礎</div></div></div>
-        <div class="ps"><div class="pn s2"></div><div class="pi"><div class="role">產品專案助理</div><div class="per">2023/01 — 2023/07</div><div class="desc">App 測試、使用者手冊撰寫、UI 設計協作，累積產品開發全流程的理解</div></div></div>
-        <div class="ps"><div class="pn s3"></div><div class="pi"><div class="role">Flutter 前端工程師</div><div class="per">2023/08 — 至今</div><div class="desc">跨平台 App 開發、架構重構、雙平台上架、AI 輔助開發</div><div class="pcb"><span class="dot"></span> 現職</div></div></div>
-      </div>
+      <div class="tp" id="about-timeline"></div>
     </div>
   </div>
 </div></section>
 
+<!-- PROJECTS -->
 <section class="sec" id="project" style="padding-bottom:60px"><div class="c">
-  <div class="sl a">Project</div>
-  <h2 class="st a" style="margin-bottom:20px">專案 / 產品經歷</h2>
-  <div class="a" style="font-size:.9rem;color:var(--ts);margin-bottom:48px;line-height:2">
-    <a href="#proj1" style="text-decoration:none;color:var(--tx);font-weight:600">· 管好房 App</a><br>
-    <a href="#proj2" style="text-decoration:none;color:var(--tx);font-weight:600">· TimeTree Exporter</a>
-  </div>
-  <div class="pc a" id="proj1">
-    <div style="padding:0"><img src="assets/images/rent_manager/banner_v4.png" alt="管好房 App" style="width:100%;display:block;border-radius:var(--rs) var(--rs) 0 0"></div>
-    <div class="pbd">
-      <p class="po">「管好房」是一款為<strong>不動產包租代管租賃公司客戶</strong>設計的 App，服務對象為該客戶內部的<strong>業務、管理者、房東、房客</strong>。主要想解決的問題是減少業務、房東、房客三方間的<strong>溝通成本、合約管理與租金繳納</strong>等痛點。我負責<strong>接手前任開發者的架構，進行全面重構</strong>——從功能模組、使用者操作流程（User Flow）到 UI 介面，都重新設計與實作，最終完成雙平台上架。</p>
-
-      <div class="pst">核心挑戰與解決方式</div>
-      <div class="cg">
-        <div class="cc a"><div class="num">01</div><h4>遺留架構重構</h4><div class="prob">接手的程式碼架構混亂，邏輯耦合度高，難以維護與擴充新功能。</div><div class="sol">重新梳理程式碼邏輯，<strong>根據新需求重新規劃資料結構與模組化架構</strong>，提升可維護性與執行效率。</div></div>
-        <div class="cc a"><div class="num">02</div><h4>跨團隊溝通磨合</h4><div class="prob">初期對「需求到交付」的流程不熟悉，與後端的對接效率偏低。</div><div class="sol"><strong>主動建立溝通機制</strong>，和後端工程師確立 API 規格與交付標準，逐步磨合出高效的協作流程。</div></div>
-        <div class="cc a"><div class="num">03</div><h4>AI 工具導入開發</h4><div class="prob">面對大量重構工作，需要在有限時間內確保品質與效率兼顧。</div><div class="sol">導入 <strong>Cursor 與 Claude</strong> 輔助編碼、需求分析與除錯，顯著縮短開發週期並提升代碼品質。</div></div>
-      </div>
-
-      <div class="pst">技術使用</div>
-      <div class="cg">
-        <div class="tc a" style="border-top:3px solid #0553B1">
-          <h4>Flutter</h4>
-          <p>使用 Flutter 進行跨平台開發，狀態管理從原有的 GetX 重構為 <strong>BLoC</strong>，提升架構的可測試性與關注點分離。</p>
-          <div class="tt"><span class="tg">Flutter</span><span class="tg">Dart</span><span class="tg">BLoC</span></div>
-        </div>
-        <div class="tc a" style="border-top:3px solid #F97316">
-          <h4>Firebase</h4>
-          <p>使用 Firebase Authentication 實作<strong>使用者身分驗證</strong>功能，處理登入、註冊與權限管理流程。同時串接 <strong>Firebase Cloud Messaging (FCM)</strong> 實現推播通知，讓使用者即時接收合約、租金等重要訊息。</p>
-          <div class="tt"><span class="tg">Firebase Auth</span><span class="tg">FCM</span></div>
-        </div>
-        <div class="tc a" style="border-top:3px solid var(--ac)">
-          <h4>後端串接</h4>
-          <p>串接該公司<strong>既有的內部系統</strong>，透過 RESTful API 取得與處理資料，實現 App 與後台的即時數據互動。</p>
-          <div class="tt"><span class="tg">RESTful API</span></div>
-        </div>
-      </div>
-
-      <div class="rb"><div class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="rt">成功完成全面重構，App 已於 App Store 與 Google Play 雙平台上線<span>從接手到上架，獨立完成前端開發並持續進行版本更新維護</span></div></div>
-
-      <div class="pst" style="margin-top:36px">Demo</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px">
-        <div style="text-align:center">
-          <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
-            <video class="dv" src="assets/videos/demo1.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;border-radius:8px;background:#000;display:none"></video>
-            <div class="dp" style="color:var(--tm);font-size:.75rem;padding:30px 0">影片準備中</div>
-          </div>
-          <div style="font-size:.82rem;font-weight:600;color:var(--tx);margin-top:10px">登入功能</div>
-        </div>
-        <div style="text-align:center">
-          <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
-            <video class="dv" src="assets/videos/demo2.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;border-radius:8px;background:#000;display:none"></video>
-            <div class="dp" style="color:var(--tm);font-size:.75rem;padding:30px 0">影片準備中</div>
-          </div>
-          <div style="font-size:.82rem;font-weight:600;color:var(--tx);margin-top:10px">身份切換</div>
-        </div>
-        <div style="text-align:center">
-          <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
-            <video class="dv" src="assets/videos/demo3.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;border-radius:8px;background:#000;display:none"></video>
-            <div class="dp" style="color:var(--tm);font-size:.75rem;padding:30px 0">影片準備中</div>
-          </div>
-          <div style="font-size:.82rem;font-weight:600;color:var(--tx);margin-top:10px">搜尋功能</div>
-        </div>
-        <div style="text-align:center">
-          <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
-            <video class="dv" src="assets/videos/demo4.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;border-radius:8px;background:#000;display:none"></video>
-            <div class="dp" style="color:var(--tm);font-size:.75rem;padding:30px 0">影片準備中</div>
-          </div>
-          <div style="font-size:.82rem;font-weight:600;color:var(--tx);margin-top:10px">留言功能</div>
-        </div>
-      </div>
-      <script>document.querySelectorAll('.dv').forEach(function(v){var p=v.nextElementSibling;v.addEventListener('loadedmetadata',function(){v.style.display='block';p.style.display='none'});v.addEventListener('error',function(){v.style.display='none';p.style.display='block'})});</script>
-    </div>
-  </div>
+  <div class="sl a" id="proj-label"></div>
+  <h2 class="st a" style="margin-bottom:20px" id="proj-title"></h2>
+  <div class="a" style="font-size:.9rem;color:var(--ts);margin-bottom:48px;line-height:2" id="proj-toc"></div>
+  <div id="proj-container"></div>
 </div></section>
 
-  <!-- PROJECT 2: TimeTree Exporter -->
-  <div class="c" style="padding-bottom:60px">
-  <div class="pc a" id="proj2" style="margin-top:0">
-    <div class="pb" style="background:linear-gradient(135deg,#15803D 0%,#22C55E 50%,#4ADE80 100%)"><div class="pbi">
-      <div class="ai" style="font-size:.75rem;font-weight:700;color:#15803D;background:rgba(255,255,255,.95)">TTE</div>
-      <h3>TimeTree Exporter</h3>
-      <div class="sub">潛水業者內部工具</div>
-    </div></div>
-    <div class="pbd">
-      <p class="po">為一間潛水業者打造的內部工具。該業者使用 <strong>TimeTree</strong> 進行內部排班管理，但 TimeTree 無法直接匯出排班資料。此工具的目的是將 TimeTree 的排班資料<strong>同步並匯出為 CSV 檔</strong>，方便業者計算薪資。</p>
+<div id="proj2-container" class="c" style="padding-bottom:60px"></div>
 
-      <div class="pst">畫面截圖</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px">
-        <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
-          <img src="assets/images/timetree1.png" alt="主畫面" style="width:100%;border-radius:8px">
-          <div style="font-size:.78rem;font-weight:600;color:var(--tx);text-align:center;margin-top:8px">主畫面 — 同步與匯出</div>
-        </div>
-        <div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">
-          <img src="assets/images/timetree2.png" alt="匯出歷史" style="width:100%;border-radius:8px">
-          <div style="font-size:.78rem;font-weight:600;color:var(--tx);text-align:center;margin-top:8px">匯出歷史紀錄</div>
-        </div>
-      </div>
-
-      <div class="pst">核心挑戰與解決方式</div>
-      <div class="cg">
-        <div class="cc a"><div class="num">01</div><h4>資料取得限制</h4><div class="prob">TimeTree 無法直接匯出排班資料，且前端受 CORS 限制無法直接呼叫 API。</div><div class="sol">透過 <strong>Node.js 後端作為代理</strong>，呼叫 TimeTree Web API 取得排班資料並同步至資料庫。</div></div>
-        <div class="cc a"><div class="num">02</div><h4>效能優化</h4><div class="prob">初版使用 Puppeteer 爬蟲，3000 筆事件需耗時 2-3 小時。</div><div class="sol">重構為 <strong>API 批次取得</strong>（每次 300 筆），同樣資料量僅需 <strong>30 秒</strong>，效能提升超過 200 倍。</div></div>
-        <div class="cc a"><div class="num">03</div><h4>全端獨立開發</h4><div class="prob">從需求分析到部署上線皆獨立完成，需掌握前後端與雲端部署。</div><div class="sol">前端 Flutter Web、後端 Node.js、資料庫 Supabase、部署 <strong>GCP Cloud Run + Firebase Hosting</strong>，獨立完成全流程。</div></div>
-      </div>
-
-      <div class="pst">技術使用</div>
-      <div class="cg">
-        <div class="tc a" style="border-top:3px solid #0553B1">
-          <h4>Flutter Web</h4>
-          <p>前端介面開發，提供同步觸發、時間範圍篩選、CSV 匯出下載與匯出歷史查詢功能。</p>
-          <div class="tt"><span class="tg">Flutter</span><span class="tg">Dart</span></div>
-        </div>
-        <div class="tc a" style="border-top:3px solid #22C55E">
-          <h4>GCP + Node.js</h4>
-          <p>Node.js 後端部署於 <strong>GCP Cloud Run</strong>，負責代理呼叫 TimeTree 內部 API 並將資料同步至資料庫。前端靜態檔案託管於 <strong>Firebase Hosting</strong>。</p>
-          <div class="tt"><span class="tg">GCP Cloud Run</span><span class="tg">Firebase Hosting</span><span class="tg">Node.js</span></div>
-        </div>
-        <div class="tc a" style="border-top:3px solid #6366F1">
-          <h4>Supabase</h4>
-          <p>使用者認證（Supabase Auth）、事件資料儲存（PostgreSQL）、Row Level Security 確保資料隔離。</p>
-          <div class="tt"><span class="tg">Supabase Auth</span><span class="tg">PostgreSQL</span><span class="tg">RLS</span></div>
-        </div>
-      </div>
-
-      <div class="rb"><div class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="rt">已上線運作，成功處理超過 23,000 筆排班事件<span>從 Puppeteer 爬蟲重構為 API 串接，效能提升 200 倍以上</span></div></div>
-    </div>
-  </div>
-  </div>
-
+<!-- FOOTER -->
 <footer><div class="c">
-  <p class="th">感謝您的時間</p>
-  <p class="ct">王澤源 Tommy · <a href="mailto:liltseyuan@gmail.com">liltseyuan@gmail.com</a> · 0921-314-789</p>
-  <p class="mo">Always Exploring and Keep Learning</p>
+  <p class="th" id="footer-thanks"></p>
+  <p class="ct" id="footer-contact"></p>
+  <p class="mo" id="footer-motto"></p>
 </div></footer>
 
-<script>
-var n=document.getElementById('nav');window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>20)});if('IntersectionObserver' in window){var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('v');o.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.a').forEach(function(el){o.observe(el)})}setTimeout(function(){document.querySelectorAll('.a').forEach(function(el){el.classList.add('v')})},1500);
-</script>
+<!-- VIDEO LIGHTBOX -->
 <div class="vl-overlay" id="vl" style="display:none"><div class="vl-close">&times;</div><video id="vl-video" controls playsinline></video></div>
+
 <script>
-(function(){var overlay=document.getElementById('vl'),vid=document.getElementById('vl-video');
-document.querySelectorAll('.dv').forEach(function(v){v.addEventListener('click',function(){vid.src=v.src;overlay.style.display='flex';requestAnimationFrame(function(){overlay.classList.add('show')});vid.play()})});
-function close(){overlay.classList.remove('show');setTimeout(function(){overlay.style.display='none';vid.pause();vid.src=''},300)}
-overlay.addEventListener('click',function(e){if(e.target===overlay||e.target.classList.contains('vl-close'))close()});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.style.display==='flex')close()})})();
+var chipIcons = [
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>'
+];
+var checkSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+
+fetch('content.json').then(function(r){return r.json()}).then(function(d){
+  // NAV
+  document.getElementById('nav-name').innerHTML = d.nav.name + '<span>.</span>';
+  var nk = document.getElementById('nav-links');
+  nk.innerHTML = '<a href="#about">' + d.nav.links[0] + '</a><a href="#project">' + d.nav.links[1] + '</a>';
+
+  // HERO
+  document.getElementById('hero-badge').textContent = d.hero.badge;
+  document.getElementById('hero-name').textContent = d.hero.name;
+  document.getElementById('hero-name-en').textContent = d.hero.nameEn;
+  document.getElementById('hero-intro').innerHTML = d.hero.intro;
+  document.getElementById('hero-scroll').textContent = d.hero.scrollHint;
+  var hc = document.getElementById('hero-chips');
+  hc.innerHTML = d.hero.chips.map(function(t, i){
+    return '<span class="chip">' + (chipIcons[i] || '') + t + '</span>';
+  }).join('');
+
+  // ABOUT
+  document.getElementById('about-label').textContent = d.about.label;
+  document.getElementById('about-title').textContent = d.about.title;
+
+  var as = document.getElementById('about-sections');
+  as.innerHTML = d.about.sections.map(function(s){
+    return '<div class="ab a"><h3>' + s.heading + '</h3>' +
+      s.paragraphs.map(function(p){ return '<p>' + p + '</p>'; }).join('') +
+      '</div>';
+  }).join('');
+
+  var tl = document.getElementById('about-timeline');
+  tl.innerHTML = d.about.timeline.map(function(t){
+    var html = '<div class="ps"><div class="pn ' + t.stage + '"></div><div class="pi">' +
+      '<div class="role">' + t.role + '</div>' +
+      '<div class="per">' + t.period + '</div>' +
+      '<div class="desc">' + t.desc + '</div>';
+    if (t.current) html += '<div class="pcb"><span class="dot"></span> ' + t.currentLabel + '</div>';
+    html += '</div></div>';
+    return html;
+  }).join('');
+
+  // PROJECTS
+  document.getElementById('proj-label').textContent = d.projects.label;
+  document.getElementById('proj-title').textContent = d.projects.title;
+
+  // TOC
+  var toc = document.getElementById('proj-toc');
+  toc.innerHTML = d.projects.items.map(function(p){
+    return '<a href="#' + p.id + '" style="text-decoration:none;color:var(--tx);font-weight:600">· ' + p.name + '</a>';
+  }).join('<br>');
+
+  // Render projects
+  d.projects.items.forEach(function(p, idx){
+    var html = '';
+
+    // Project 1 (banner image) vs Project 2+ (gradient header)
+    if (p.banner) {
+      html += '<div class="pc a" id="' + p.id + '">';
+      html += '<div style="padding:0"><img src="' + p.banner + '" alt="' + p.name + '" style="width:100%;display:block;border-radius:var(--rs) var(--rs) 0 0"></div>';
+    } else {
+      html += '<div class="pc a" id="' + p.id + '" style="margin-top:0">';
+      html += '<div class="pb" style="background:' + p.headerColor + '"><div class="pbi">';
+      html += '<div class="ai" style="font-size:.75rem;font-weight:700;color:' + p.headerIconColor + ';background:rgba(255,255,255,.95)">' + p.headerIcon + '</div>';
+      html += '<h3>' + p.name + '</h3>';
+      if (p.subtitle) html += '<div class="sub">' + p.subtitle + '</div>';
+      html += '</div></div>';
+    }
+
+    html += '<div class="pbd">';
+    html += '<p class="po">' + p.overview + '</p>';
+
+    // Screenshots (for proj2)
+    if (p.screenshots) {
+      html += '<div class="pst">畫面截圖</div>';
+      html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px">';
+      p.screenshots.forEach(function(s){
+        html += '<div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">';
+        html += '<img src="' + s.src + '" alt="' + s.alt + '" style="width:100%;border-radius:8px">';
+        html += '<div style="font-size:.78rem;font-weight:600;color:var(--tx);text-align:center;margin-top:8px">' + s.caption + '</div>';
+        html += '</div>';
+      });
+      html += '</div>';
+    }
+
+    // Challenges
+    html += '<div class="pst">核心挑戰與解決方式</div><div class="cg">';
+    p.challenges.forEach(function(ch, i){
+      html += '<div class="cc a"><div class="num">0' + (i + 1) + '</div><h4>' + ch.title + '</h4>';
+      html += '<div class="prob">' + ch.problem + '</div>';
+      html += '<div class="sol">' + ch.solution + '</div></div>';
+    });
+    html += '</div>';
+
+    // Tech stacks
+    html += '<div class="pst">技術使用</div><div class="cg">';
+    p.techStacks.forEach(function(t){
+      html += '<div class="tc a" style="border-top:3px solid ' + t.color + '">';
+      html += '<h4>' + t.title + '</h4><p>' + t.desc + '</p>';
+      html += '<div class="tt">' + t.tags.map(function(tg){ return '<span class="tg">' + tg + '</span>'; }).join('') + '</div>';
+      html += '</div>';
+    });
+    html += '</div>';
+
+    // Result
+    html += '<div class="rb"><div class="ri">' + checkSvg + '</div>';
+    html += '<div class="rt">' + p.result.title + '<span>' + p.result.subtitle + '</span></div></div>';
+
+    // Demos (proj1 only)
+    if (p.demos) {
+      html += '<div class="pst" style="margin-top:36px">Demo</div>';
+      html += '<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px">';
+      p.demos.forEach(function(dm){
+        html += '<div style="text-align:center">';
+        html += '<div style="background:var(--bg);border:1px solid var(--bl);border-radius:var(--rs);overflow:hidden;padding:12px">';
+        html += '<video class="dv" src="' + dm.src + '" autoplay muted loop playsinline preload="metadata" style="width:100%;border-radius:8px;background:#000;display:none"></video>';
+        html += '<div class="dp" style="color:var(--tm);font-size:.75rem;padding:30px 0">影片準備中</div>';
+        html += '</div>';
+        html += '<div style="font-size:.82rem;font-weight:600;color:var(--tx);margin-top:10px">' + dm.label + '</div></div>';
+      });
+      html += '</div>';
+    }
+
+    html += '</div></div>';
+
+    if (idx === 0) {
+      document.getElementById('proj-container').innerHTML = html;
+    } else {
+      document.getElementById('proj2-container').innerHTML = html;
+    }
+  });
+
+  // FOOTER
+  document.getElementById('footer-thanks').textContent = d.footer.thanks;
+  document.getElementById('footer-contact').innerHTML = d.footer.contact + ' · <a href="mailto:' + d.footer.email + '">' + d.footer.email + '</a> · ' + d.footer.phone;
+  document.getElementById('footer-motto').textContent = d.footer.motto;
+
+  // Init video loading handlers
+  document.querySelectorAll('.dv').forEach(function(v){
+    var p = v.nextElementSibling;
+    v.addEventListener('loadedmetadata', function(){ v.style.display = 'block'; p.style.display = 'none'; });
+    v.addEventListener('error', function(){ v.style.display = 'none'; p.style.display = 'block'; });
+  });
+
+  // Init video lightbox
+  var overlay = document.getElementById('vl'), vid = document.getElementById('vl-video');
+  document.querySelectorAll('.dv').forEach(function(v){
+    v.addEventListener('click', function(){
+      vid.src = v.src; overlay.style.display = 'flex';
+      requestAnimationFrame(function(){ overlay.classList.add('show'); }); vid.play();
+    });
+  });
+  function closeLightbox(){
+    overlay.classList.remove('show');
+    setTimeout(function(){ overlay.style.display = 'none'; vid.pause(); vid.src = ''; }, 300);
+  }
+  overlay.addEventListener('click', function(e){ if (e.target === overlay || e.target.classList.contains('vl-close')) closeLightbox(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && overlay.style.display === 'flex') closeLightbox(); });
+
+  // Init scroll animations
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(x){ if (x.isIntersecting) { x.target.classList.add('v'); obs.unobserve(x.target); } });
+    }, { threshold: .08, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.a').forEach(function(el){ obs.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.a').forEach(function(el){ el.classList.add('v'); }); }, 1500);
+});
+
+// Nav scroll effect
+var n = document.getElementById('nav');
+window.addEventListener('scroll', function(){ n.classList.toggle('scrolled', window.scrollY > 20); });
 </script>
 </body>
 </html>
