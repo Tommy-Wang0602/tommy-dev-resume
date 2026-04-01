@@ -94,7 +94,7 @@
           {
             "color": "#0553B1",
             "title": "Flutter",
-            "desc": "使用 Flutter 進行跨平台開發，狀態管理從原有的 GetX 重構為 <strong>BLoC</strong>，提升架構的可測試性與關注點分離。",
+            "desc": "使用 Flutter 進行跨平台開發，狀態管理從原有的 <strong>GetX</strong> 重構為 <strong>BLoC</strong>，提升架構的可測試性與關注點分離。",
             "tags": ["Flutter", "Dart", "BLoC"]
           },
           {
@@ -140,7 +140,7 @@
             "solution": "透過 <strong>Node.js 後端作為代理</strong>，呼叫 TimeTree Web API 取得排班資料並同步至資料庫。"
           },
           {
-            "title": "效能優化",
+            "title": "技術方案改善",
             "problem": "初版使用 Puppeteer 爬蟲，3000 筆事件需耗時 2-3 小時。",
             "solution": "重構為 <strong>API 批次取得</strong>（每次 300 筆），同樣資料量僅需 <strong>30 秒</strong>，效能提升超過 200 倍。"
           },
