@@ -57,9 +57,9 @@
       {
         "stage": "s3",
         "role": "Flutter 前端工程師",
-        "period": "2023/08 — 至今",
+        "period": "2023/08 — 2026/03",
         "desc": "跨平台 App 開發、架構重構、雙平台上架、AI 輔助開發",
-        "current": true,
+        "current": false,
         "currentLabel": "現職"
       }
     ]
