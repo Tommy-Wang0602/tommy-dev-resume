@@ -1,5 +1,9 @@
 # CLAUDE.md
 
+## Response Language
+
+- 使用繁體中文回答，專有名詞使用「中文(英文)」的方式呈現
+
 ## Commit Rules
 
 - Write all commit messages in English
