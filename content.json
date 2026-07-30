@@ -92,19 +92,16 @@
         ],
         "techStacks": [
           {
-            "color": "#0553B1",
             "title": "Flutter",
             "desc": "使用 Flutter 進行跨平台開發，狀態管理從原有的 <strong>GetX</strong> 重構為 <strong>BLoC</strong>，提升架構的可測試性與關注點分離。",
             "tags": ["Flutter", "Dart", "BLoC"]
           },
           {
-            "color": "#F97316",
             "title": "Firebase",
             "desc": "使用 Firebase Authentication 實作<strong>使用者身分驗證</strong>功能，處理登入、註冊與權限管理流程。同時串接 <strong>Firebase Cloud Messaging (FCM)</strong> 實現推播通知，讓使用者即時接收合約、租金等重要訊息。",
             "tags": ["Firebase Auth", "FCM"]
           },
           {
-            "color": "var(--ac)",
             "title": "後端串接",
             "desc": "串接該公司<strong>既有的內部系統</strong>，透過 RESTful API 取得與處理資料，實現 App 與後台的即時數據互動。",
             "tags": ["RESTful API"]
@@ -125,9 +122,7 @@
         "id": "proj2",
         "name": "TimeTree Exporter",
         "subtitle": "潛水業者內部工具",
-        "headerColor": "linear-gradient(135deg,#15803D 0%,#22C55E 50%,#4ADE80 100%)",
         "headerIcon": "TTE",
-        "headerIconColor": "#15803D",
         "overview": "為一間潛水業者打造的內部工具。該業者使用 <strong>TimeTree</strong> 進行內部排班管理，但 TimeTree 無法直接匯出排班資料。此工具的目的是將 TimeTree 的排班資料<strong>同步並匯出為 CSV 檔</strong>，方便業者計算薪資。",
         "screenshots": [
           { "src": "assets/images/timetree1.png", "alt": "主畫面", "caption": "主畫面 — 同步與匯出" },
@@ -152,19 +147,16 @@
         ],
         "techStacks": [
           {
-            "color": "#0553B1",
             "title": "Flutter Web",
             "desc": "前端介面開發，提供同步觸發、時間範圍篩選、CSV 匯出下載與匯出歷史查詢功能。",
             "tags": ["Flutter", "Dart"]
           },
           {
-            "color": "#22C55E",
             "title": "GCP + Node.js",
             "desc": "Node.js 後端部署於 <strong>GCP Cloud Run</strong>，負責代理呼叫 TimeTree 內部 API 並將資料同步至資料庫。前端靜態檔案託管於 <strong>Firebase Hosting</strong>。",
             "tags": ["GCP Cloud Run", "Firebase Hosting", "Node.js"]
           },
           {
-            "color": "#6366F1",
             "title": "Supabase",
             "desc": "使用者認證（Supabase Auth）、事件資料儲存（PostgreSQL）、Row Level Security 確保資料隔離。",
             "tags": ["Supabase Auth", "PostgreSQL", "RLS"]
